@@ -4,3 +4,5 @@ export { findAll } from './findAll';
 export { update } from './update';
 export { removeOne } from './removeOne';
 export { removeAll } from './removeAll';
+
+export { findUser } from './findUser';

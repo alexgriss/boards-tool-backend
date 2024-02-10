@@ -3,11 +3,10 @@ import cors from 'cors';
 import { config } from 'dotenv';
 import path from 'path';
 
-import { EXPRESS_SUCCESS_MESSAGE } from './shared/constants';
 import { connectToDatabase } from './config';
 import { errorHandler } from './middlewares';
 import { apiRouter } from './routes';
-import { logger } from './shared';
+import { EXPRESS_SUCCESS_MESSAGE, logger } from './shared';
 
 config({ path: path.join(__dirname, '../', '.env') });
 
